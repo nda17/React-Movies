@@ -7,7 +7,149 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-color {
+  background-color: #b388ff;
 }
+
+.mr-2 {
+  margin-right: 0.6rem;
+}
+
+/* .link-nav-custom {
+
+} */
+
+.link {
+  color: whitesmoke;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.link:last-child {
+  margin-right: 0;
+}
+
+.navbar-container {
+  padding: 11px 12px;
+}
+
+.navbar-header {
+  padding: 17px 12px;
+}
+
+.copyright {
+  color: whitesmoke;
+  margin: 0;
+  font-size: 14px;
+}
+
+.copyright-image {
+  vertical-align: text-top;
+}
+
+.content-app {
+  min-height: calc(100vh - 62px - 74px);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-search {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.radio-search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.card-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text {
+  margin-bottom: 0px;
+}
+
+.custom-loader {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  animation: s4 4s infinite;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  border: 8px solid;
+  border-radius: 50%;
+  border-color: #0d6efd #0d6efd #0000 #0000;
+  mix-blend-mode: darken;
+  animation: s4 1s infinite linear;
+}
+
+.custom-loader::after {
+  border-color: #0000 #0000 #E4E4ED #E4E4ED;
+  animation-direction: reverse;
+}
+
+@keyframes s4 {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
+@media (min-width: 425px) {
+  .radio-search {
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 576px) {
+  .radio-search {
+    width: 62%;
+  }
+
+  .col {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 992px) {
+  .radio-search {
+    width: 42%;
+  }
+
+  .col {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .radio-search {
+    width: 32%;
+  }
+}
+
