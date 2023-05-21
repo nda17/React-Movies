@@ -11,7 +11,7 @@ export function Footer() {
                         >
                             <img
                                 className='copyright-image'
-                                src='./icons/github.svg'
+                                src='/public/icons/github.svg'
                                 alt='Github'
                                 width='30'
                                 height='30'

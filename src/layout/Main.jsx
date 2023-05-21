@@ -18,7 +18,7 @@ export class Main extends React.Component {
 			.then(data => this.setState({ movies: data.Search, loading: false }));
 	}
 
-	//Функция для передачи в компонент <Search /> и в Search.jsx (в props). Реализация поска по введенным данным
+	//Функция для передачи в компонент <Search /> и в Search.jsx (в props). Реализация поиска по введенным данным
 	searchMovies = (string, type = '&') => {
 		this.setState({ loading: true });
 		fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${string}&type=${type}`)

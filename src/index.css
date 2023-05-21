@@ -25,10 +25,6 @@ button {
 	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* .link-nav-custom {
-
-} */
-
 .link {
 	color: whitesmoke;
 	text-decoration: none;
@@ -64,7 +60,7 @@ button {
 }
 
 .content-app {
-	min-height: calc(100vh - 62px - 74px);
+	min-height: calc(100vh - 62px - 107.33px);
 	padding: 10px 12px;
 	display: flex;
 	flex-direction: column;

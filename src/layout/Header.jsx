@@ -6,7 +6,7 @@ export function Header() {
                     <a className='navbar-brand text-info' href='#'>
                         <img
                             className='logo-image'
-                            src='./icons/movie-camera.png'
+                            src='public/icons/movie-camera.png'
                             alt='Movie icon'
                         />
                         Movies
