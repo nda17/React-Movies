@@ -1,3 +1,3 @@
 export function Preloader() {
-    return <div className="custom-loader" />
+	return <div className='custom-loader' />;
 }
