@@ -1,3 +1,6 @@
+import logo from '../images/movie-camera.png';
+import title from '../images/movies-logo.png';
+
 export function Header() {
 	return (
 		<header className='header'>
@@ -6,10 +9,14 @@ export function Header() {
 					<a className='navbar-brand text-info' href='#'>
 						<img
 							className='logo-image'
-							src='/public/icons/movie-camera.png'
-							alt='Movie icon'
+							src={logo}
+							alt='Logo'
 						/>
-						Movies
+						<img
+							className='title-image'
+							src={title}
+							alt={'Title'}
+						/>
 					</a>
 					<div className='nav-menu'>
 						<div className='collapse show-off' id='navbarToggleExternalContent'>

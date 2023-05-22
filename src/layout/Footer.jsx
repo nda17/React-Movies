@@ -1,3 +1,6 @@
+import gh from '../icons/github.svg';
+import title from '../images/movies-logo.png';
+
 export function Footer() {
 	return (
 		<footer className='footer'>
@@ -8,7 +11,7 @@ export function Footer() {
 						<a className='navbar-brand' href='https://github.com/nfdmitry'>
 							<img
 								className='copyright-image'
-								src='/public/icons/github.svg'
+								src={gh}
 								alt='Github'
 								width='30'
 								height='30'
@@ -16,7 +19,11 @@ export function Footer() {
 						</a>
 					</p>
 					<a className='navbar-brand text-info' href='#'>
-						Movies
+						<img 
+							className='title-image' 
+							src={title} 
+							alt={'Title'} 
+						/>
 					</a>
 				</div>
 			</nav>
