@@ -2,7 +2,7 @@ import React from 'react';
 
 export class Search extends React.Component {
 	state = {
-		search: 'Marvel',
+		search: 'Spider-Man',
 		type: '',
 	};
 
