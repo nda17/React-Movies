@@ -2,11 +2,11 @@ import React from 'react';
 
 export class Search extends React.Component {
 	state = {
-		search: 'spider',
+		search: 'Spider-man',
 		type: '',
 	};
 
-	//Обработка нажатия
+	//Обработка нажатия клавиши Enter
 	handleKey = event => {
 		if (event.key === 'Enter') {
 			event.preventDefault();
@@ -16,11 +16,14 @@ export class Search extends React.Component {
 
 	//Обработка нажатия радио кнопки
 	handleFilter = event => {
-		this.setState(() => ({ type: event.target.dataset.type }), () => {
-			console.log(this.props);
-            this.props.searchMovies(this.state.search, this.state.type);
-        });
-    };
+		this.setState(
+			() => ({ type: event.target.dataset.type }),
+			() => {
+				console.log(this.props);
+				this.props.searchMovies(this.state.search, this.state.type);
+			}
+		);
+	};
 
 	render() {
 		return (
@@ -57,9 +60,7 @@ export class Search extends React.Component {
 								onChange={this.handleFilter}
 								checked={this.state.type === '&'}
 							/>
-							<span className='form-check-label'>
-								All
-							</span>
+							<span className='form-check-label'>All</span>
 						</label>
 						<label className='form-check'>
 							<input
@@ -70,9 +71,7 @@ export class Search extends React.Component {
 								onChange={this.handleFilter}
 								checked={this.state.type === 'movie'}
 							/>
-							<span className='form-check-label'>
-								Movies
-							</span>
+							<span className='form-check-label'>Movies</span>
 						</label>
 						<label className='form-check'>
 							<input
@@ -83,9 +82,7 @@ export class Search extends React.Component {
 								onChange={this.handleFilter}
 								checked={this.state.type === 'series'}
 							/>
-							<span className='form-check-label'>
-								Series
-							</span>
+							<span className='form-check-label'>Series</span>
 						</label>
 						<label className='form-check'>
 							<input
@@ -96,9 +93,7 @@ export class Search extends React.Component {
 								onChange={this.handleFilter}
 								checked={this.state.type === 'game'}
 							/>
-							<span className='form-check-label'>
-								Game
-							</span>
+							<span className='form-check-label'>Game</span>
 						</label>
 					</div>
 				</div>
