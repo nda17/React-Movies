@@ -11,17 +11,25 @@ export class Main extends React.Component {
 
 	//Запрос на сервер при монтировании
 	componentDidMount() {
-		fetch('http://www.omdbapi.com/?apikey=1b111e43&type=&s=Spider-man')
+		fetch('https://www.omdbapi.com/?apikey=1b111e43&type=&s=Marvel')
 			.then(response => response.json())
-			.then(data => this.setState({ movies: data.Search, loading: false }));
+			.then(data => this.setState({ movies: data.Search, loading: false }))
+			.catch((error) => {
+				console.error(error)
+				this.setState({loading: false})
+			})
 	}
 
 	//Функция для передачи в компонент <Search /> и в Search.jsx (в props). Реализация поиска по введенным данным
 	searchMovies = (string, type = '&') => {
 		this.setState({ loading: true });
-		fetch(`http://www.omdbapi.com/?apikey=1b111e43&s=${string}&type=${type}`)
+		fetch(`https://www.omdbapi.com/?apikey=1b111e43&s=${string}&type=${type}`)
 			.then(response => response.json())
-			.then(data => this.setState({ movies: data.Search, loading: false }));
+			.then(data => this.setState({ movies: data.Search, loading: false }))
+			.catch(error => {
+				console.error(error);
+				this.setState({ loading: false });
+			});
 	};
 
 	render() {
