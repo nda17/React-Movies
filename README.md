@@ -2,4 +2,4 @@
 
 Development files, implementation with React class components
 
-Stack: React, Bootstrap5, Webpack
+Stack: React v18.2.0 , Bootstrap5, Webpack
