@@ -8,7 +8,7 @@ export function Footer() {
 				<div className='container-fluid'>
 					<p className='copyright'>
 						© {new Date().getFullYear()}
-						<a className='navbar-brand' href='https://github.com/nfdmitry'>
+						<a className='navbar-brand' href='https://github.com/nda17'>
 							<img
 								className='copyright-image'
 								src={gh}
