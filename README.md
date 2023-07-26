@@ -10,7 +10,7 @@
 - Bootstrap v5.3
 
 ## Deployed:
-[Watch here](https://nda17.github.io/React-Movies)
+[Watch here](https://nda17.github.io/React-Movies-app/)
 
 ## Project setup:
 ```
